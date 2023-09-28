@@ -1,5 +1,6 @@
-import { List, StatWrapper} from "components/Statistics/Statistics.styled";
 import PropTypes from 'prop-types'
+
+import { List, StatWrapper} from "components/Statistics/Statistics.styled";
 import { getRandomHexColor } from '../../helpers/getRandomHexColor';
 
 export const Statistics = ({ stats }) => {
@@ -20,11 +21,12 @@ export const Statistics = ({ stats }) => {
 };
 
 
-Statistics.proptype = {
-    title: PropTypes.string,
-    stats: PropTypes.shape({
-        id: PropTypes.string,
-        label: PropTypes.string,
-        percentage: PropTypes.number
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired
     })
-}
+  ).isRequired
+};

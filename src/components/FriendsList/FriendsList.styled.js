@@ -5,6 +5,7 @@ export const Friends = styled.ul`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+
   li {
     display: flex;
     flex-direction: row;
