@@ -1,14 +1,14 @@
-import { List, StatWrapper, Title } from "components/Statistics/Statistics.styled";
+import { List, StatWrapper} from "components/Statistics/Statistics.styled";
 import PropTypes from 'prop-types'
+import { getRandomHexColor } from '../../helpers/getRandomHexColor';
 
-export const Statistics = ({ title, stats }) => {
+export const Statistics = ({ stats }) => {
   return (
     <StatWrapper>
-      <Title>{title}</Title>
       <List>
-        {stats.map(({ id, label, percentage }, idx) => {
+        {stats.map(({ id, label, percentage }) => {
           return (
-            <li key={id} index={idx}>
+            <li key={id} style={{backgroundColor: getRandomHexColor()}}>
               <span>{label}</span>
               <span>{percentage}%</span>
             </li>
