@@ -1,4 +1,4 @@
-import { Layout } from './Layout';
+import { Layout } from './Layout/Layout';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendsList/FriendsList';
 import { TransactionHistory } from './Transactions/Transactions';
