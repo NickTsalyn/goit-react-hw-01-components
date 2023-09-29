@@ -1,7 +1,5 @@
+import { Wrapper, Photo, List, ListItem } from "./Profile.styled";
 
-import { Photo } from './Description.styled';
-import { Wrapper } from './Description.styled';
-import { List, ListItem } from './StatsList.styled';
 
 export const Profile = ({ user: { avatar, username, tag, location, stats: {followers, views, likes} } }) => {
   return (

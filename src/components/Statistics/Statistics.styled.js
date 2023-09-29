@@ -21,3 +21,11 @@ export const List = styled.ul`
 export const StatWrapper = styled.section`
   padding-top: 40px;
 `;
+
+
+export const TitleWrapper = styled.div`
+  text-align: center;
+`;
+export const TitleText = styled.h2`
+  padding: 15px 0;
+`;
